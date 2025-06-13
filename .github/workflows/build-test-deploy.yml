@@ -25,14 +25,14 @@ jobs:
       - run: npm install
       - run: npm test
       
-deploy:
+  deploy:
     needs: test
 
     permissions:
       contents: write
       pages: write     
       id-token: write  
-
+      
     environment:
       name: production
       url: ${{ steps.deployment.outputs.page_url }}
