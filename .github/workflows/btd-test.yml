@@ -1,3 +1,5 @@
+name: btd-test
+on: push
 jobs:
   my-job:
     # Importing a reusable workflow from another repository and branch
